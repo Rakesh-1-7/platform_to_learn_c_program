@@ -24,6 +24,10 @@ body {
 .avatar::before,
 .avatar::after{
     --scale: 0;
+    --tooltip-color: #1e1e1e;
+
+
+
     position: absolute;
     content: '';
     top: -.25rem;
@@ -43,6 +47,7 @@ body {
     width: max-content;
     border-radius: 3px;
     max-width: 100%;
+    background: var(--tooltip-color);
 }
 
 .avatar:hover::before,
@@ -51,7 +56,8 @@ body {
 }
 
 .avatar::after{
-    content:  '';
-    border: 10px solid transparent;
-    border-top-color: black;
+    width: 16px;
+  height: 20px;
+  background-color: #1e1e1e;
+  clip-path: polygon(50% 50%, 0 0, 100% 0);
 }
