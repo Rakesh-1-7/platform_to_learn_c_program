@@ -1,0 +1,57 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(https://i.imgur.com/wfDHjIS.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.avatar::before,
+.avatar::after{
+    --scale: 0;
+    position: absolute;
+    content: '';
+    top: -.25rem;
+    left: 50%;
+    background: black;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition-duration: 600ms;
+    transform-origin: bottom;
+}
+
+.avatar::before{
+    content: attr(data-tooltip);
+    color: red;
+    padding: .5rem;
+    text-align: center;
+    background: #1e1e1e;
+    width: max-content;
+    border-radius: 3px;
+    max-width: 100%;
+}
+
+.avatar:hover::before,
+.avatar:hover::after{
+    --scale: 1;
+}
+
+.avatar::after{
+    content:  '';
+    border: 10px solid transparent;
+    border-top-color: black;
+}
