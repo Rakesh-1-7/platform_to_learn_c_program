@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 1</title>
+    <link rel="stylesheet" href="../prismfiles/prism-dark.css">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <h1>1. C Program to convert &degC to &degF : </h1>
+<pre style="max-width: max-content;">
+
+<code className="language-c">
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+
+int main()
+{
+    float deg_c,deg_f;
+    clrscr();
+    printf("Enter the temperature in degree farenheit : ");
+    scanf("%f",&ampdeg_f);
+    deg_c = 5*(deg_f-32)/9.0;
+    // c = 5*(F-32)/9
+    printf("The temperature in celsius is %0.2f.\n", deg_c);
+    getch();
+    return 0;
+}
+</code>
+</pre>
+
+<p>Enter the temperature in degree farenheit :</p>
+<input type="text" id="farenheit" style="color: black;">
+<br>
+<button id="submit" onclick="fToC();success()" style="color: black;">Convert</button>
+
+<p > Temperature in &degC</p>
+<input id="answer" style="color: black;">
+
+
+
+</body>
+<script src="../prismfiles/prism-dark.js"></script>
+<script src="../public/1_st_program.js"></script>
+</html>
