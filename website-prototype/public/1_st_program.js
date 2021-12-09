@@ -13,12 +13,12 @@ function fToC()
   document.getElementById("answer").value = deg_c;
 }
 
-function success() {
-  document.getElementById("submit").style.transition = "1s";
-  document.getElementById("submit").style.backgroundColor  = "black";
-  document.getElementById("submit").style.color  = "white";
-  setTimeout("successReset()" ,350);
-}
+// function success() {
+//   document.getElementById("submit").style.transition = "1s";
+//   document.getElementById("submit").style.backgroundColor  = "black";
+//   document.getElementById("submit").style.color  = "white";
+//   setTimeout("successReset()" ,350);
+// }
 
 function successReset(){
 
