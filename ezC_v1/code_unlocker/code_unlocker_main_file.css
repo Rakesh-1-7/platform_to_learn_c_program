@@ -20,9 +20,7 @@ header
 }
 header .logo
 {
-  font-size: 100px;
   color: #fff;
-  /* text-transform: uppercase; */
   cursor: pointer;
 }
 .toggle
@@ -52,7 +50,6 @@ header .logo
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-
   justify-content: space-between;
   align-items: center;
   background: #111;
@@ -85,6 +82,7 @@ header .logo
   background: #03a9f4;
   mix-blend-mode: overlay;
 }
+
 
 .social
 {
@@ -148,12 +146,5 @@ header .logo
   {
     padding: 40px;
   }
-  .text h2
-  {
-    font-size: 3em;
-  }
-  .text h3
-  {
-    font-size: 2em;
-  }
+
 }

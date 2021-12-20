@@ -1,50 +1,43 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 
-nav
-{
-    content: "";
-    padding: 15px;
-    font-size: 20px;
-    background:lightblue;
-}
 .mainTitles
 {
+    position: relative;
+    top: 50px;
+    bottom: 10px;
 
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 80%;
 }
+
 .titles
 {
+    min-width: 300px;
+    position: relative;
+    width: 100%;
     margin: 10px;
-
     padding: 30px;
     background-color: black;
     color: white;
     opacity: 0.5;
     border-radius: 15px;
-    background-size: 200%;
     transition: .5s ease-out;
 }
 .titles:hover
 {
     background-position: left;
     margin: 10px;
+    box-shadow: 0 0 10px 10px #888888;
     padding: 30px;
     background-color: black;
     color: white;
     opacity: 1;
     border-radius: 15px;
+    box-shadow: 50px;
     transition: 1s;
 }
 
 a
 {
     text-decoration: none;
+
 }
 
 video
@@ -55,4 +48,3 @@ video
     object-fit:cover;
     height: 100%;
 }
-

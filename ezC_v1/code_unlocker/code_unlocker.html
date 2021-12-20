@@ -7,49 +7,63 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="code_unlocker.css">
     <link rel="stylesheet" href="code_unlocker_main_file.css">
-    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="../circular_progress/circularProgress.css">
+    <title>Code Unlocker</title>
 </head>
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo"></h2>
+            <h2 class="logo">Name</h2> 
             <div class="toggle"></div>
         </header>
-
-        <video src="backgroundVideo.mp4" muted loop autoplay></video>
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://www.pexels.com/video/woman-typing-on-a-keyboard-while-wearing-a-vr-headset-8721932.mp4" type="video/mp4">
+          </video>
+        <!-- <video src="backgroundVideo.mp4" muted loop autoplay></video> -->
         
         <!-- link to the bg video -> https://www.pexels.com/video/woman-typing-on-a-keyboard-while-wearing-a-vr-headset-8721932/ -->
-
+        <!-- Circular progress Bar
+        <div class="container">
+            <div class="Progress" >Progress</div>
+            <div class="circular-progress"></div>
+            <div class="value-container">0%</div>
+        </div> -->
         <div class="text">
-            <div class="mainTitles">
+
+            <div class="mainTitles flexbox-container">
 
                 <a href="../code1.html"><div class="titles">
                     Program 1
-        
                 </div></a>
         
-                <div class="titles">
+                <a href="../code1.html"><div class="titles">
                     Program 2
-                </div>
+                </div></a>
         
-                <div class="titles">
+                <a href="../code1.html"><div class="titles">
                     Program 3
-                </div>
+                </div></a>
         
-                <div class="titles">
+                <a href="../code1.html"><div class="titles">
                     Program 4
-                </div>
+                </div></a>
         
-                <div class="titles">
+                <a href="../code1.html"><div class="titles">
                     Program 5
-                </div>
+                </div></a>
         
-                <div class="titles">
+                <a href="../code1.html"><div class="titles">
                     Program 6
-                </div>
+                </div></a>
         
             </div>
         </div>
+
+        <!--Script-->
+
+
+        <br>
+        <br>
         <ul class="social">       
                 <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
                 <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
@@ -61,11 +75,12 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../login/loginpage.html">Logout</a></li>
         </ul>
     </div>
 
     <script src="code_unlocker_2.js"></script>
+    <script src="../circular_progress/circularProgress.js"></script>
 
 
 </body>
