@@ -6,19 +6,17 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background: linear-gradient(#1e1e1e 50%, #e1e2f1 50%);
-}
 
 .container{
+    margin-top: 5%;
     height: 400px;
     width: 400px;
     background-color: #ffffff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top:50%;
-    left: 50%;
+    position: relative;
+    left: 35% ;
+
+    top:0;
+    /* transform: translate(-50%, -50%); */
     border-radius: 8px;
     box-shadow: 20px 20px 40px rgba(60, 60, 150, 0.25);
     display: grid;
@@ -28,8 +26,8 @@ body{
 
 .circular-progress{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 60%;
+    width: 60%;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -43,10 +41,16 @@ body{
     height: 84%;
     width: 84%;
     background-color: #ffffff;
-
     border-radius: 50%;
 }
 
+.progress
+{
+    position: absolute;
+    color: red;
+    top: 2%;
+    font-size : 150%;
+}
 .value-container{
     position: absolute;
     font-family:"Poppins", sans-serif;

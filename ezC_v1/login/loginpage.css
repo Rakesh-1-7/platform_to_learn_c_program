@@ -61,3 +61,8 @@ border-color: #2ecc71;
 .box input[type = "submit"]:hover{
     background-color: #2ecc71;
 }
+
+a
+{
+    text-decoration: none;
+}

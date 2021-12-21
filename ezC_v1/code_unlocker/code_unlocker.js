@@ -7,3 +7,4 @@ const bg_image = ['backgroundVideo.mp4','backgroundVideo2.mp4','backgroundVideo3
 // video4 - https://www.pexels.com/video/woman-with-futuristic-technology-on-her-artificial-arm-6153734/
 
 document.getElementById('fullPath1').src = bg_image[Math.floor(Math.random() * 4)];  
+
