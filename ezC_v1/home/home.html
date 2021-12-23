@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
     <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="../login/login.css">
 </head>
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo"><span style="font-size: 60%;">ez</span><span style="color: #009DAE;">C</span></h2>
+            <a style="text-decoration: none;" href="#" onclick="LoginFormexit();"><h2 class="logo"><span style="font-size: 60%;">ez</span><span style="color: #009DAE;">C</span></h2></a>
             <div class="toggle"></div>
         </header>
 
         <video src="../pexels-tea-oebel-6804109.mp4" muted loop autoplay></video>
         
-        <div class="text">
+        <div id="textContent" class="text">
             <h2>Never Stop</h2>
             <h3>Learning to <span style="color: #009DAE;">code</span></h3>
             <p>We at ezC want to enable students to be able to grasp the concepts of programming through intuitive online learning methods</p>
-            <a href="../login/loginpage.html">Login</a>
+            <a href="#" onclick="displayLoginForm();">Login</a>
         </div>
         <ul class="social">       
                 <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
@@ -31,16 +32,55 @@
 
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="#">Programs</a></li>
             <li><a href="#">Insights</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+    <div>
+    <section id="loginform" style="height: 100vh;">
+        <div class="container">
+            <div class="user singinBx">
+                <div class="imgBx"><img src="https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI="></div>
+                    <div class="formBx">
+                        <form action="../code_unlocker/code_unlocker.html">
+                            <h2>Log In</h2>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input id="loginButton" type="submit" value="Login" >
+                            <p class="signup">Don't have an account ?<a href="#" onclick="toggleForm();">Sign Up</a></p>
+                        </form>
 
+                    </div>
+
+
+            </div>
+
+            <div class="user singupBx">
+                    <div class="formBx">
+                        <form>
+                            <h2>Create an account</h2>
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email Address">
+                            <input type="password" placeholder="Create Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="submit" name="" value="Sign Up">
+                            <p class="signup">Already have an account ?<a href="#" onclick="toggleForm();">Sign In</a></p>
+                        </form>
+
+                    </div>
+                    <div class="imgBx"><img src="https://media.istockphoto.com/photos/hands-of-robot-and-human-touching-on-global-virtual-network-future-picture-id1051617224?b=1&k=20&m=1051617224&s=170667a&w=0&h=WOeubYqgRDcNA879eRbnG2_osdqpATXfW_JQcZAAfvs="></div>
+                
+
+            </div>
+
+        </div>
+    </section>
+    </div>
     <script src="home.js"></script>
-
+    <script src="../login/login.js"></script>
 
 </body>
 </html>

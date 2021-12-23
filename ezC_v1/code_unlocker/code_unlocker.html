@@ -1,6 +1,7 @@
 <html lang="en">
     <link rel="stylesheet" href="template.css">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,16 @@
     <link rel="stylesheet" href="code_unlocker_main_file.css">
     <link rel="stylesheet" href="../circular_progress/circularProgress.css">
     <title>Code Unlocker</title>
+    <!-- <script>printUserName();</script> -->
 </head>
 <body>
     <section class="showcase">
         <header>
-            <h2 class="logo">Name</h2> 
+            <h2 class="logo" id="logo"></h2> 
             <div class="toggle"></div>
         </header>
+
+        
         <!-- <video autoplay loop muted src="https://player.vimeo.com/external/260015882.hd.mp4?s=a1321e6df42f072dc1a0c62018580a2b2387f402&;profile_id=175"></video> -->
         <video id="fullPath1" muted loop autoplay></video> <!--Video is give n an id and the src is fed in using the js file-->
         
@@ -57,8 +61,6 @@
             </div>
         </div>
 
-        <!--Script-->
-
 
         <br>
         <br>
@@ -67,6 +69,8 @@
                 <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
                 <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
         </ul>
+
+        <script style="z-index: 10000;">printUserName("Rakesh");</script>
     </section>
 
     <div class="menu">
@@ -80,7 +84,7 @@
     <script src="code_unlocker_2.js"></script>
     <script src="code_unlocker.js"></script>
     <script src="../circular_progress/circularProgress.js"></script>
-
+    <script src="../login/loginpage.js"></script>
 
 </body>
 </html>
