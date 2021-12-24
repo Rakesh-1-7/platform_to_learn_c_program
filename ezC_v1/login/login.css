@@ -7,6 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+form i {
+    z-index: 100;
+    margin-left: 0;
+    cursor: pointer;
+    position: absolute;
+    top:48%;
+    left:84%;
+    /* top:23.5vh;
+    left:45vh; */
+}
+
 section
 {
     transition: 2s;
@@ -20,6 +31,7 @@ section
 
 section .container
 {
+    margin-top: 13vh;
     /* z-index: 1000; */
     position: relative;
     width: 800px;
@@ -32,12 +44,16 @@ section .container
 
 section .container .user
 {
+
     position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    animation-name: loginform;
+    animation-duration: 1s;
+    animation-timing-function:ease;
     display: flex;
 }
 
@@ -209,3 +225,10 @@ section .container.active .singinBx .imgBx
         width: 100%;
     }
 }
+
+@keyframes loginform 
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+} 
