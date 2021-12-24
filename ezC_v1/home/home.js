@@ -8,17 +8,20 @@ menuToggle.addEventListener('click', () => {
 
 document.getElementById("loginform").style.display ="none";
 
-function displayLoginForm() {
+function displayLoginForm() {loginform
+
     document.getElementById("textContent").style.display ="none";
-    setTimeout(1000);
+    
     document.getElementById("loginform").style.display = "";
 
+    document.getElementById("video").style.opacity = "0.3";
 }
 
 function LoginFormexit() {
 
     document.getElementById("textContent").style.display ="";
     document.getElementById("loginform").style.display = "none";
+    document.getElementById("video").style.opacity = "1";
 
 }
 
