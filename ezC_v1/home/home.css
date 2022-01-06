@@ -18,13 +18,7 @@ header
   justify-content: space-between;
   align-items: center;
 }
-header .logo
-{
-  font-size: 100px;
-  color: #fff;
-  /* text-transform: uppercase; */
-  cursor: pointer;
-}
+
 .toggle
 {
   position: relative;
@@ -35,6 +29,7 @@ header .logo
   background-size: 30px;
   background-position: center;
   cursor: pointer;
+
 }
 .toggle.active
 {
@@ -44,6 +39,7 @@ header .logo
   background-size: 25px;
   background-position: center;
   cursor: pointer;
+
 }
 .showcase
 {
@@ -204,3 +200,4 @@ header .logo
     font-size: 2em;
   }
 }
+
