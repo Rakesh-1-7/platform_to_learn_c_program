@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="code4.css">
+    <link rel="stylesheet" href="../../bubble_drop.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Program 4</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+
+            <a style="text-decoration: none;" href="../../../home/home.html" >     
+                <div class="drop">
+                    <span>ez</span>
+                <h2>
+                    <span style="color: #009DAE;">C</span>
+                </h2>
+        </div>
+        </a>
+            <div class="toggle"></div>
+        </header>
+        <!-- <img src="./background2.png" alt="" > -->
+        <video src="../../../pexels-tea-oebel-6804109.m4v" muted loop autoplay></video>
+        <div class="overlay">
+            <h1 style="color: aliceblue;font-size: 3rem;">4. Vovel or Consonant !</h1>
+        <pre class="prettyprint">
+                
+#include&lt;stdio.h&gt;
+
+int main()
+{
+    char ch;
+    clrscr();
+    printf("Enter a character : ");
+    scanf("%c", &ch);
+    switch (ch)
+    {
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+      case 'A':
+      case 'E':
+      case 'I':
+      case 'O':
+      case 'U':
+      printf("%c is a vowel.", ch);
+      break;
+      default:
+      printf("%c is a consonant.", ch);
+    }
+    getch();
+    return 0;
+}
+        </pre>
+                    <div style="margin-left: 10px;margin-bottom: 20px;">
+                    <p >Input a character :</p>
+                    <input type="" id="coeffs" maxlength="1">
+                    <br>
+                    <button  id="submit" class="submitButton" onclick="fToC();" >Verify !</button>
+                            
+                    <p ></p>
+                    <input style="width:15vw;min-width:250px;"  type="" id="answer" >
+                    </div>
+                </div>
+
+        <ul class="social">       
+                <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a class="essential"href="../../../home/home.html">Home</a></li>
+            <li><a class="essential" href="../../../code_unlocker/code_unlocker.html">Programs</a></li>
+            <li><a class="essential" href="../../../AboutUs/AboutUs.html">About Us</a></li>
+            <!-- <li><a class="essential" href="#">Contact</a></li> -->
+        </ul>
+    </div>
+    
+    </section>
+    
+    <script src="code4_func.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=desert"></script>
+    <script src="code4.js"></script>
+</body>
+</html>
