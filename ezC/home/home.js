@@ -30,7 +30,7 @@ function validatePassword() {
     var user = document.getElementById('newuser').value;
     var email = document.getElementById('newemail').value;
     var regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,20}$/;
-    var Password = document.getElementById('passwd').value;
+    var Password = document.getElementById('password').value;
     var PasswordConfirm = document.getElementById('confirm_password').value;
     console.log("out");
     if(!regularExpression.test(Password) && user != "" && email != "") {
@@ -40,7 +40,7 @@ function validatePassword() {
         setTimeout(function(){
             document.getElementById("passwd-conditions").style.display = "none";
 
-        }, 3500); 
+        }, 4000); 
 
     }
     if(Password != PasswordConfirm)
