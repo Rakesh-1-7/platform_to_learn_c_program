@@ -65,13 +65,15 @@
                         <div class="formBx">
                             <form>
                                 <h2>Create an account</h2>
-                                <input type="text" placeholder="Username">
-                                <input type="email" placeholder="Email Address">
-                                <input type="password" name="password" id="password" placeholder="Create Password">
+                                <input type="text" id="newuser" placeholder="Username" required>
+                                <input type="email" id="newemail" placeholder="Email Address" required>
+                                <input type="password" name="password" id="passwd" placeholder="Create Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                                 <i class="bi bi-eye-slash" id="togglePassword"></i>
-                                <input type="password" placeholder="Confirm Password">
-                                <input type="submit" name="" value="Sign Up">
-                                <p class="signup">Already have an account ?<a style="display: contents;" href="#" onclick="toggleForm();">Sign In</a></p>
+                                <input type="password" id="confirm_password" placeholder="Confirm Password">
+                                <input type="submit" onclick="validatePassword();" name="" value="Sign Up">
+                                <p class="signup">Already have an account ?<a style="display:contents;" href="#" onclick="toggleForm();">Sign In</a></p>
+                                <p class="signup" 
+                                style="opacity: 1;text-transform: none;font-size:0.63rem;color:rgb(243, 116, 116);font-weight: 800;position: absolute;margin-top: -0.05vh;" id = "passwd-conditions">Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
                             </form>
     
                         </div>
@@ -101,3 +103,4 @@
 
 </body>
 </html>
+
