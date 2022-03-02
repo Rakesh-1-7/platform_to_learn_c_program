@@ -45,6 +45,19 @@ function validatePassword() {
     }
     if(Password != PasswordConfirm)
     {
-        
+        alert("Passwords do not match"); 
     }
+}
+
+function validateAdmin()
+{
+    var username = document.getElementById('username');
+    var password = document.getElementById('passwd');
+    if(username == "admin" && password == "admin")
+    {
+        return true;
+    }else{
+        return false
+    }
+
 }
