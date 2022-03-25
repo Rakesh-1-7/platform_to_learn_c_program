@@ -3,7 +3,12 @@ const signUp = (e) =>
     let newuser = document.getElementById("newuser").value,
         newemail = document.getElementById("newemail").value,
         signup_pwd = document.getElementById("signup_pwd").value;
-
+        confirm_pwd = document.getElementById("confirm_password").value;
+    if(signup_pwd !== confirm_pwd)
+    {
+        alert("Passwords do not match.");
+        return;
+    }
     let formData = JSON.parse(localStorage.getItem("formData")) || [];
 
     let exist = 
@@ -45,6 +50,5 @@ function signIn(e){
     }
     e.preventDefault();
 }
-
 
 

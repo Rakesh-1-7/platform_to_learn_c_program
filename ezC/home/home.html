@@ -7,97 +7,84 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <title>ezC</title>
     <link rel="stylesheet" href="../login/login.css">
-    <link rel="stylesheet" href="./bubble_drop.css">
+    <link rel="stylesheet" href="./bubble_drop.css">  
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
 </head>
-
 <body>
     <section class="showcase">
         <header>
 
-            <a style="text-decoration: none;" href="#" onclick="LoginFormexit();">
+            <a style="text-decoration: none;" href="#" onclick="LoginFormexit();">     
                 <div class="drop">
                     <span>ez</span>
-                    <h2>
-                        <span style="color: #009DAE;">C</span>
-                    </h2>
-                </div>
-            </a>
+                <h2>
+                    <span style="color: #009DAE;">C</span>
+                </h2>
+        </div>
+        </a>
             <div class="toggle"></div>
         </header>
 
-        <video id="video" src="../pexels-tea-oebel-6804109.m4v" muted loop autoplay></video>
-
+        <video id = "video" src="../pexels-tea-oebel-6804109.m4v" muted loop autoplay></video>
+        
         <div id="textContent" class="text">
             <h2>Never Stop</h2>
             <h3>Learning to <span style="color: #009DAE;">code</span></h3>
-            <p>We at ezC want to enable students to be able to grasp the concepts of programming through intuitive
-                online learning methods</p>
+            <p>We at ezC want to enable students to be able to grasp the concepts of programming through intuitive online learning methods</p>
             <a href="#" onclick="displayLoginForm();">Login</a>
         </div>
-        <ul class="social">
-            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        <ul class="social">       
+                <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
         </ul>
     </section>
     <div>
         <section id="loginform" style="height: 100vh;">
             <div id="loginBox" class="container">
                 <div class="user singinBx">
-                    <div class="imgBx"><img
-                            src="https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI=">
-                    </div>
-                    <div class="formBx">
-                        <form action="../code_unlocker/code_unlocker.html">
-                            <h2>Log In</h2>
-                            <input type="text" placeholder="Username" required>
-                            <input type="password" placeholder="Password" required>
+                    <div class="imgBx"><img src="https://media.istockphoto.com/photos/computer-programmer-working-on-laptop-picture-id1265176772?b=1&k=20&m=1265176772&s=170667a&w=0&h=IHFnvxa3kvVTuZcEfPpCSGIFA_gNT7dIlGDR7eD2cFI="></div>
+                        <div class="formBx">
+                            <form action="../code_unlocker/code_unlocker.html">
+                                <h2>Log In</h2>
+                                <input type="text" placeholder="Username" required>
+                                <input type="password" placeholder="Password" required>
 
-                            <input id="loginButton" type="submit" value="Login">
-                            <p class="signup">Don't have an account ?<a style="display: contents;" href="#"
-                                    onclick="toggleForm();">Sign Up</a></p>
-                        </form>
-
-                    </div>
-
-
+                                <input id="loginButton" type="submit" value="Login" >
+                                <p class="signup">Don't have an account ?<a style="display: contents;" href="#" onclick="toggleForm();">Sign Up</a></p>
+                            </form>
+    
+                        </div>
+    
+    
                 </div>
-
+    
                 <div class="user singupBx">
-                    <div class="formBx">
-                        <form role="form" onsubmit="signUp(event);">
-                            <h2>Create an account</h2>
-                            <input type="text" id="newuser" name="newuser" placeholder="Username" required>
-                            <input type="email" id="newemail" name="newemail" placeholder="Email Address" required>
-                            <input type="password" name="signup_pwd" id="signup_pwd" placeholder="Create Password"
-                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                                required>
-                            <i class="bi bi-eye-slash" id="togglePassword"></i>
-                            <input type="password" id="confirm_password" placeholder="Confirm Password">
-                            <input type="submit" onclick="validatePassword();" name="" value="Sign Up">
-                            <p class="signup">Already have an account ?<a style="display:contents;" href="#"
-                                    onclick="toggleForm();">Sign In</a></p>
-                            <p class="signup"
-                                style="opacity: 0;text-transform: none;font-size:0.63rem;color:rgb(243, 116, 116);font-weight: 800;position: absolute;margin-top: -0.05vh;"
-                                id="passwd-conditions">Password Must contain at least one number and one uppercase and
-                                lowercase letter, and at least 8 or more characters</p>
-                        </form>
-
-                    </div>
-                    <div class="imgBx"><img
-                            src="https://media.istockphoto.com/photos/hands-of-robot-and-human-touching-on-global-virtual-network-future-picture-id1051617224?b=1&k=20&m=1051617224&s=170667a&w=0&h=WOeubYqgRDcNA879eRbnG2_osdqpATXfW_JQcZAAfvs=">
-                    </div>
-
-
+                        <div class="formBx">
+                            <form role="form" onsubmit="signUp(event);">
+                                <h2>Create an account</h2>
+                                <input type="text" id="newuser" placeholder="Username" required>
+                                <input type="email" id="newemail" placeholder="Email Address" required>
+                                <input type="password" name="signup_pwd" id="signup_pwd" placeholder="Create Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                                <input type="password" id="confirm_password" placeholder="Confirm Password">
+                                <input type="submit" onclick="validatePassword();" name="" value="Sign Up">
+                                <p class="signup">Already have an account ?<a style="display:contents;" href="#" onclick="toggleForm();">Sign In</a></p>
+                                <p class="signup" 
+                                style="opacity: 0;text-transform: none;font-size:0.63rem;color:rgb(243, 116, 116);font-weight: 800;position: absolute;margin-top: -0.05vh;" id = "passwd-conditions">Password Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
+                            </form>
+    
+                        </div>
+                        <div class="imgBx"><img src="https://media.istockphoto.com/photos/hands-of-robot-and-human-touching-on-global-virtual-network-future-picture-id1051617224?b=1&k=20&m=1051617224&s=170667a&w=0&h=WOeubYqgRDcNA879eRbnG2_osdqpATXfW_JQcZAAfvs="></div>
+                    
+    
                 </div>
-
+    
             </div>
         </section>
-    </div>
+        </div>
     <div class="menu">
         <ul>
             <li><a style="display: contents;" href="home.html">Home</a></li>
@@ -108,7 +95,7 @@
             <!-- <li><a style="display: contents;" href="../Dashboard/Dashboard.html">Dashboard</a></li> -->
         </ul>
     </div>
-
+    
     <script src="home.js"></script>
     <script src="localstorage.js"></script>
     <script src="../login/login.js"></script>
@@ -116,5 +103,4 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>

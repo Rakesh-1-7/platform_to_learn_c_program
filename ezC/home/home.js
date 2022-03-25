@@ -30,7 +30,7 @@ function validatePassword() {
     var user = document.getElementById('newuser').value;
     var email = document.getElementById('newemail').value;
     var regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,20}$/;
-    var Password = document.getElementById('password').value;
+    var Password = document.getElementById('signup_pwd').value;
     var PasswordConfirm = document.getElementById('confirm_password').value;
     console.log("out");
     if(!regularExpression.test(Password) && user != "" && email != "") {
@@ -43,21 +43,17 @@ function validatePassword() {
         }, 4000); 
 
     }
-    if(Password != PasswordConfirm)
-    {
-        alert("Passwords do not match"); 
-    }
 }
 
-function validateAdmin()
-{
-    var username = document.getElementById('username');
-    var password = document.getElementById('passwd');
-    if(username == "admin" && password == "admin")
-    {
-        return true;
-    }else{
-        return false
-    }
+// function validateAdmin()
+// {
+//     var username = document.getElementById('username');
+//     var password = document.getElementById('signup_pwd');
+//     if(username == "admin" && password == "admin")
+//     {
+//         return true;
+//     }else{
+//         return false
+//     }
 
-}
+// }
