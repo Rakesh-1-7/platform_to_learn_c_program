@@ -5,7 +5,7 @@ function toggleForm()
 }
 
 const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
+const password = document.querySelector('#signup_pwd');
 
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -16,7 +16,7 @@ togglePassword.addEventListener('click', function (e) {
 });
 
 const togglePasswordLogin = document.querySelector('#togglePasswordlogin');
-const passwordLogin = document.querySelector('#passwd');
+const passwordLogin = document.querySelector('#signup_pwd');
 
 togglePasswordLogin.addEventListener('click', function (e) {
     // toggle the type attribute
