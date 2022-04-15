@@ -264,11 +264,10 @@ div a
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 150%;
+  width: 15em;
   height: max-content;
-  font-size: 0.75em;
+  font-size: 0.85em;
   background-color: black;
-  color: rgb(72, 209, 72);
   text-align: center;
   padding: 2px 0;
   border-radius: 6px;

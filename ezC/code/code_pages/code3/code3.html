@@ -40,13 +40,13 @@ int main()
     printf("Enter the coefficients of the quadratic : ");
     scanf("%d%d%d",&a,&b,&c);
     d = b*b - 4*a*c;
-    if(d > 0)
+    <div class="tooltip">if(d > 0)<span class="tooltiptext"> This is a conditional statement the evaluates if a condition is True and executes all the following block of code.</span></div>
     {
       x1 = ( -b + sqrt(d) ) / (2.0*a);
       x2 = ( -b - sqrt(d) ) / (2.0*a);
       printf("The roots are %.2f, %.2f.", x1, x2);
     }
-    else if(d == 0)
+    <div class="tooltip">else if(d == 0)<span class="tooltiptext"> Incase the if condition isn&#8217t met , this condition is checked.</span></div>
     {
       x1 = ( -b ) / (2.0*a);
       printf("The two roots are equal, and the value is %.2f.",x1);

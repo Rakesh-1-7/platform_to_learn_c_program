@@ -30,19 +30,19 @@
         <pre class="prettyprint">
                 
 #include&lt;stdio.h&gt;
-#include&lt;math.h&gt;
+<div class="tooltip">#include&lt;math.h&gt;<span class="tooltiptext"> Header file in the standard library of the C programming language designed for basic Mathematical Operations.</span></div>
 
-int main()
+int <div class="tooltip">main()<span class="tooltiptext"> The main() function is from which the compiler strats executing the Program.</span></div>
 {
-    float a,b,c,s,area;
-                    
-    clrscr();
+    <div class="tooltip">float a,b,c,s,area;<span class="tooltiptext"> Declaration of variables.</span></div>
+
+    <div class="tooltip">clrscr();<span class="tooltiptext"> It&#8217s a function the clears the screen for the previous Output.</span></div>
                     
     printf("Enter the sides of the triangle : ");
-    scanf("%f%f%f",&a,&b,&c);
-    s = (a+b+c)/2;
-    area = sqrt( s*(s-a)*(s-b)*(s-c) );
-    printf("The area of the triangle is %0.2f", area);
+    scanf(<div class="tooltip">"%f%f%f"<span class="tooltiptext"> The format specifier for Float data.</span></div>,&a,&b,&c);
+    <div class="tooltip">s = (a+b+c)/2;<span class="tooltiptext"> "/" is used to get the Quotient , "*" to obtain the Product and the "%" to get the Remainder of a division.</span></div>
+    <div class="tooltip">area = sqrt( s*(s-a)*(s-b)*(s-c) )<span class="tooltiptext"> sqrt is the Square root funtion, and the result of the right hand side is stored in the variable on the left</span></div>;
+    printf("The area of the triangle is <div class="tooltip">%0.2f"<span class="tooltiptext"> It tells the printf method to print a floating point value  with 2 decimal places</span></div>, area);
                     
     getch();
     return 0;

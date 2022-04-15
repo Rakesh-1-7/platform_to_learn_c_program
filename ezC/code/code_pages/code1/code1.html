@@ -29,19 +29,19 @@
             <h1 style="color: aliceblue;font-size: 3rem;">1. Program to convert &deg;C to &deg;F.</h1>
         <pre class="prettyprint">
                 
-<div class="tooltip">#include&lt;stdio.h&gt;<span class="tooltiptext">A preprocessor statement - Stdio stands for Standard Input Output</span></div>
+<div class="tooltip">#include&lt;stdio.h&gt;<span class="tooltiptext"> Header file which has the necessary information to include the input/output related functions in our Program.</span></div>
 #include&lt;conio.h&gt;
                                 
-int main()
+<div class="tooltip" >int<span class="tooltiptext"> This is the return type of the function</span></div> main()
 {
-    float deg_c,deg_f;
+    <div class="tooltip" >float<span class="tooltiptext"> Declaration of variables of type float. This datatype can store floating point numbers.</span></div> deg_c,deg_f;
     clrscr();
-    printf("Enter the temperature in degree fa<p id="wordwrapper" style="display: none;" ></p>renheit : ");  
-    scanf("%f",&ampdeg_f);
+    <div class="tooltip" >printf<span class="tooltiptext"> This is an inbuilt function to display data on the Standard Output i.e the Monitor.</span></div>("Enter the temperature in degree fa<p id="wordwrapper" style="display: none;" ></p>renheit : ");  
+    <div class="tooltip" >scanf<span class="tooltiptext"> This is an inbuilt function to read data from Standard Input i.e the Keyboard.</span></div>("%f",<div class="tooltip" >&ampdeg_f<span class="tooltiptext"> The ampersand "&amp" is used to specify the address of a variable.</span></div>);
     deg_c = 5*(deg_f-32)/9.0;
     // c = 5*(F-32)/9
     printf("The temperature in celsius is %0.2<p class="wordwrapper" style="display: none;"></p>f.\n", deg_c);  
-    getch();
+    <div class="tooltip" >getch()<span class="tooltiptext"> The program waits for the user to enter a character, so that he/she can see the Output.</span></div>;
     return 0;
 }
         </pre>
