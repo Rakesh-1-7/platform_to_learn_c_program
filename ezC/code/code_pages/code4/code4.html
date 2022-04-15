@@ -33,13 +33,13 @@
 
 int main()
 {
-    char ch;
+    <div class="tooltip">char ch;<span class="tooltiptext"> The keyword char is used for declaring Character type variables.And characters are enclosed within single quotes i.e ' ' </span></div>
     clrscr();
     printf("Enter a character : ");
     scanf("%c", &ch);
-    switch (ch)
+    <div class="tooltip">switch (ch)<span class="tooltiptext"> A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each switch case.</span></div>
     {
-      case 'a':
+      <div class="tooltip">case 'a':<span class="tooltiptext"> Checks if the value of the switched variable and the value specifies i.e 'a' and executes the following statements if the result is True</span></div>
       case 'e':
       case 'i':
       case 'o':
@@ -50,8 +50,8 @@ int main()
       case 'O':
       case 'U':
       printf("%c is a vowel.", ch);
-      break;
-      default:
+      <div class="tooltip">break;<span class="tooltiptext"> The break is a keyword in C which is used to bring the program control out of the loop.</span></div>
+      <div class="tooltip">default:<span class="tooltiptext"> The default statement is executed if no case constant-expression value is equal to the value of expression </span></div>
       printf("%c is a consonant.", ch);
     }
     getch();
