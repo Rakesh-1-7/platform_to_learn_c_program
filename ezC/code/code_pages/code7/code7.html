@@ -36,18 +36,18 @@
 int main()
 {
 	int i=0;
-	char str[30];
+	char <div class="tooltip">str[30]<span class="tooltiptext">Declaration of an array with 30 elements.</span></div>;
 	char str_cpy[30];
 	clrscr();
 	printf("Enter a string : ");
-    <div class="tooltip">gets(str);<span class="tooltiptext">reads a line from stdin and stores it into the string pointed to by str. It stops when either the newline character is read or when the end-of-file is reached, whichever comes first.</span></div>
+        <div class="tooltip">gets(str);<span class="tooltiptext">Reads a line from stdin and stores it into the string pointed to by str. It stops when either the newline character is read or when the end-of-file is reached, whichever comes first.</span></div>
 	
 	while(str[i] != 0)
 	{
 		str_cpy[i] = str[i];
 		i++;
 	}
-	str_cpy[i] = '\0';
+	str_cpy[i] = <div class="tooltip">'\0'<span class="tooltiptext">It&#8217s a null character used to indicate end-of-string or a Null character.</span></div>;
 	printf("The copied string is : %s\n", str_cpy);
 	printf("The length of the string is : %d",i);
 	getch();
