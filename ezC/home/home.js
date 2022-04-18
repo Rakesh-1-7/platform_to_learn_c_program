@@ -45,15 +45,29 @@ function validatePassword() {
     }
 }
 
-// function validateAdmin()
-// {
-//     var username = document.getElementById('username');
-//     var password = document.getElementById('signup_pwd');
-//     if(username == "admin" && password == "admin")
-//     {
-//         return true;
-//     }else{
-//         return false
-//     }
+function validateAdmin()
+{
+    // const button = document. querySelector('button')
+    var username = document.getElementById('login_username');
+    var password = document.getElementById('login_passwd');
+    console.log(username)
+    console.log(password)
+    var inputs = document.getElementsByTagName("input"); 
+    if(username.value == "admin" && password.value == "admin")
+    {
 
-// }
+        for (var i = 0; i < inputs.length; i++) { 
+            inputs[i].disabled = false;
+            // location.reload();
+            }
+        } else {
+        for (var i = 0; i < inputs.length; i++) { 
+            inputs[i].disabled = true;
+            
+
+        }alert("Invalid credentials !")
+        location.reload();
+    }
+    
+
+}

@@ -49,10 +49,10 @@
                         <div class="formBx">
                             <form action="../code_unlocker/code_unlocker.html">
                                 <h2>Log In</h2>
-                                <input type="text" placeholder="Username" required>
-                                <input type="password" placeholder="Password" required>
+                                <input type="text" placeholder="username" id="login_username" required>
+                                <input type="password" placeholder="Password" id="login_passwd" required>
 
-                                <input id="loginButton" type="submit" value="Login" >
+                                <input id="loginButton" type="submit" value="Login" onclick="validateAdmin()" >
                                 <p class="signup">Don't have an account ?<a style="display: contents;" href="#" onclick="toggleForm();">Sign Up</a></p>
                             </form>
     
