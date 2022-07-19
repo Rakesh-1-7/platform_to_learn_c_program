@@ -15,17 +15,24 @@
         <form>
             <h1>Give your Feedback!</h1>
             <div class="id">
-                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Full name" required>
                 <i class = "far fa-user"></i>
             </div>
             <div class="id">
-                <input type="email" placeholder="Email address">
+                <input type="email" placeholder="Email address" required>
                 <i class = "far fa-envelope"></i>
             </div>
-            <textarea cols="15" rows="5" placeholder="Enter your opinions here.."></textarea>
-            <button>Send</button>
+            <textarea cols="15" rows="5" placeholder="Enter your opinions here.." required></textarea>
+            <button onclick="mail();">Send</button>
         </form>
     </div>
     
+    <script>
+        function mail()
+        {
+            window.open('mailto:rakesh12bn@gmail.com')
+        }
+    </script>
+
 </body>
 </html>

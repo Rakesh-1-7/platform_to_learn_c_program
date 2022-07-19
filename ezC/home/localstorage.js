@@ -44,9 +44,13 @@ function signIn(e){
         data.newuser.toLowerCase() == newuser.toLowerCase() && data.signup_pwd.toLowerCase() == signup_pwd.toLowerCase()
     );
     if(!exist) {
+        for (var i = 0; i < inputs.length; i++) { 
+            inputs[i].disabled = true;
+        }
         alert("Incorrect login credentials.");
+        location.reload();
     }else{
-        location.href = "/";
+        location.href = "/code_unlocker/code_unlocker.html";
     }
     e.preventDefault();
 }
